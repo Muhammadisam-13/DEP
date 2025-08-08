@@ -8,7 +8,7 @@ import tensorflow as tf  # for defining and training machine learning models
 # This project classifies handwritten digits from the MNIST Dataset from tensorflow (images of handwritten digits)
 # In this project, a neural network is created by dividing the MNIST dataset into training and testing data
 # The training data is used to train the model. The model is saved, loaded, and finally tested on unseen input data
-# The unseen input data are images of digits from (1-9) that I created myself using paint, so that I could test the performance and accuracy of the 
+# The drawing samples are images of digits from (1-9) that I created myself using paint, so that I could test the performance and accuracy of the 
 # neural network model in classifying these handwritten digits correctly. Each handwritten digit in the MNIST Dataset has a respective label,
 # which is the actual number or digit that is hand-drawn
 
@@ -61,3 +61,4 @@ while(os.path.isfile(f"drawing_samples/{image_num}.jpg")):
         print("Error. Please check the file name again.")
     finally:
         image_num += 1 # to transition and check all the digits one by one
+
